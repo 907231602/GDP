@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<div class="header">
+		<div class="header-left">
+			<div class="logo">
+				<a href="index.html"><img src="images/log1.png" alt=""></a>
+			</div>
+			<div class="top-nav">
+				<ul >
+					<li ><a href="index.html" >首页</a></li>
+					<!-- <li><a href="show_flow_info.jsp" target="content"  class="black">demo</a></li> -->
+					<li><a href="show_user_info.jsp"  target="content" class="black1">用户基本信息分析</a></li>
+					<li><a href="show_browser_info.jsp"  target="content" class="black2" >浏览器信息分析模块</a></li>
+					<li><a href="show_map_info.jsp"  target="content" class="black3" >地域信息分析模块</a></li>
+					<li><a href="show_regionPV_info.jsp"  target="content" class="black3" >地域跳出率情况分析</a></li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			$("span.menu").click(function(){
+				$(".top-nav-in ul").slideToggle(500, function(){
+				});
+			});
+		</script>
+	</div>
+	<div class="main">
+		<h1>电商网站大数据分析</h1>
+		<iframe id="content" name="content" scrolling="no" src="show_flow_info.jsp"></iframe>
+	</div>
+</body>
+</html>
